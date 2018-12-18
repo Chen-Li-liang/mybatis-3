@@ -18,6 +18,7 @@ package org.apache.ibatis.parsing;
 import java.util.Properties;
 
 /**
+ * 动态属性解析器
  * @author Clinton Begin
  * @author Kazuki Shimizu
  */
@@ -46,6 +47,10 @@ public class PropertyParser {
   private static final String ENABLE_DEFAULT_VALUE = "false";
   private static final String DEFAULT_VALUE_SEPARATOR = ":";
 
+  /**
+   * 构造方法，修饰符为private,禁止构造PropertyParser对象
+   * 因为它是一个静态方法的工具类
+   */
   private PropertyParser() {
     // Prevent Instantiation
   }
